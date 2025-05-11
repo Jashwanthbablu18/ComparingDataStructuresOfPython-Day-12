@@ -1,0 +1,34 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+
+Functionalities of functions:
+1. show_intro():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. dataStructuresInPy Dictionary:
+   - A dictionary where each key is a data structure's name (list, set, tuple, dict).
+   - Each key in dictionary having values which represents:
+     - description: A brief explanation of the data structure.
+     - use_case: Examples of real-life scenarios where the data structure might be used.
+     - pros: A list of advantages.
+     - cons: A list of disadvantages.
+
+3. dataStructuresInPyInfo(ds_key):
+   - Takes a key (ds_key) that corresponds to one of the data structures.
+   - Retrieves and displays detailed information about the specified data structure if it exists in the dataStructuresInPy dictionary.
+   - Displays the description, use case, pros, and cons in a formatted manner.
+   - If the key is not found, it displays an error msg.
+
+4. main():
+   - Calls show_intro() to display the introduction msg.
+   - Enters a loop that prompts the user to select a data structure to explore from a menu.
+   - Based on the user input, calls dataStructuresInPyInfo() with the appropriate key ("list", "set", "tuple", or "dict").
+   - If the user chooses "5", it exits the loop.
+   - Handles invalid input by prompting the user to try again.
+
+5. Execution Block:
+   - Starting point: The script is designed to run when executed directly. The conditional if __name__ == "__main__": main() ensures that main() is called only when the script is run as a standalone program, not when imported as a module.
+
+Usage:
+- Users interact with the program through a simple text-based interface.
+- They select options by entering numbers corresponding to each data structure or choosing to exit.
